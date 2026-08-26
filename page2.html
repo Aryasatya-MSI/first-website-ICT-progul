@@ -20,49 +20,63 @@
 
     .container {
         display: flex;
-        gap: 10px;
+    }
+    .jajar-genjang {
+    width: 250px;
+    height: 300px;
+    background: #3498db;
+    transform: skewX(-20deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }   
+
+    .jajar-genjang span {
+        transform: skewX(20deg);
+        color: white;
+        font-weight: bold;
     }
 
     img {
         display: block;
-        margin: 20px auto;
+        margin: 20px 50px;
         border-radius: 8px;
+    }
+    .star-list{
+        list-style:none;
+    }
+
+    .star-list li::before{
+        content: "★";
+        margin-right: 10px;
     }
 </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story 1</title>
+    <title>Page 2</title>
 </head>
 <body>
-    <h1>STORY 1</h1>
-
+    <h1>Character</h1>
     <p>
-        <b>is the beginning of our story.</b>
-        <i>
-            Rover terbangun di Gorges of Spirits tanpa ingatan tentang siapa dirinya. Ia ditemukan oleh Yangyang dan Chixia. Tidak lama kemudian mereka diserang Crownless, Tacet Discord yang sangat kuat.
-            Hal aneh terjadi: Rover mampu menyerap frekuensi Crownless dan menjadikannya Echo. Kemampuan ini tidak normal, bahkan bagi seorang Resonator. Setelah itu Rover bersama Yangyang dan Chixia pergi menuju Jinzhou
-        </i>
+        Saat perjalanan Rover, ia bertemu dengan berbagai figur figur penting seperti :
+        <ol class="star-list">
+            <li>baizhi</li>
+            <div class="container">
+                <img src="gorges.png" alt="Rover" width="500" height="300" class="jajar-genjang">
+                <p>
+                    Baizhi (白芷) adalah seorang peneliti di Huaxu Academy, yang berfokus pada bidang Remnant Ecoacoustics, yaitu penelitian mengenai Remnant dan fenomena yang berkaitan dengan frekuensi/resonansi.
+
+                    Ia berasal dari Huanglong dan berafiliasi dengan Jinzhou. Baizhi merupakan Resonator Glacio dengan senjata Rectifier, serta merupakan karakter rarity 4★. Ulang tahunnya adalah 10 September.
+                    Yang paling penting dari Baizhi adalah hubungannya dengan You’tan, makhluk Remnant yang selalu bersamanya.
+                </p>
+            </div>
+            <li>baizhi</li>
+            <img src="gorges.png" alt="Rover" width="500" height="300" class="frame-miring">
+        </ol>
     </p>
-    <div class="container">
-        <img src="gorges.png" alt="Rover" width="500" height="300">
-        <img src="keren.jpg" alt="Rover" width="500" height="300">
-    </div>
-
-
-    <h1>Act 1: First Resonance</h1>
-    <p>
-        Sesampainya di Jinzhou, Rover mendapat undangan dari Jinhsi, Magistrate Jinzhou. Masalahnya, Jinhsi justru sedang tidak berada di City Hall.
-
-        Rover kemudian bertemu Sanhua, pengawal Jinhsi. Sanhua memberikan beberapa benda misterius yang ditinggalkan Jinhsi sebagai petunjuk. Jinhsi tampaknya sudah mengetahui kedatangan Rover dan sengaja mengatur semuanya dari belakang layar.
-
-        Rover kemudian diperiksa oleh Baizhi dan Mortefi.
-
-        Di sinilah muncul petunjuk penting: ketika Rover menjalani simulasi menggunakan teknologi yang berhubungan dengan Sonoro Sphere, muncul sebuah Tacet Discord misterius yang menyerang Rover. Baizhi menyadari bahwa ada sesuatu dalam frekuensi Rover yang tidak biasa.
-
-        Sementara itu, benda-benda pemberian Jinhsi ternyata merupakan semacam puzzle yang mengarahkan Rover menuju informasi mengenai masa lalu Jinzhou dan hubungan Rover dengan peristiwa lama.
-    </p>
-     <a href="page2.html">AYO KLIK AKU!</a>
+    <button onclick="location.href='Story1.html'">Visit Home</button>
     
 </body>
 </html>
