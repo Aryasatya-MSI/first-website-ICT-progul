@@ -1,82 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f7f4f4;
-    }
-
-    h1 {
-        color: #333;
-    }
-
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #555;
-    }
-
-    .container {
-        display: flex;
-    }
-    .jajar-genjang {
-    width: 250px;
-    height: 300px;
-    background: #3498db;
-    transform: skewX(-20deg);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }   
-
-    .jajar-genjang span {
-        transform: skewX(20deg);
-        color: white;
-        font-weight: bold;
-    }
-
-    img {
-        display: block;
-        margin: 20px 50px;
-        border-radius: 8px;
-    }
-    .star-list{
-        list-style:none;
-    }
-
-    .star-list li::before{
-        content: "★";
-        margin-right: 10px;
-    }
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
-</head>
-<body>
-    <h1>Character</h1>
-    <p>
-        Saat perjalanan Rover, ia bertemu dengan berbagai figur figur penting seperti :
-        <ol class="star-list">
-            <li>baizhi</li>
-            <div class="container">
-                <img src="gorges.png" alt="Rover" width="500" height="300" class="jajar-genjang">
-                <p>
-                    Baizhi (白芷) adalah seorang peneliti di Huaxu Academy, yang berfokus pada bidang Remnant Ecoacoustics, yaitu penelitian mengenai Remnant dan fenomena yang berkaitan dengan frekuensi/resonansi.
 
-                    Ia berasal dari Huanglong dan berafiliasi dengan Jinzhou. Baizhi merupakan Resonator Glacio dengan senjata Rectifier, serta merupakan karakter rarity 4★. Ulang tahunnya adalah 10 September.
-                    Yang paling penting dari Baizhi adalah hubungannya dengan You’tan, makhluk Remnant yang selalu bersamanya.
-                </p>
-            </div>
-            <li>baizhi</li>
-            <img src="gorges.png" alt="Rover" width="500" height="300" class="frame-miring">
-        </ol>
+    <style>
+        body {
+            margin: 20px;
+            background-color: #f7f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th {
+            background-color: #eee;
+        }
+
+        td img {
+            display: block;
+            width: 200px;
+            height: auto;
+            margin: 15px auto 0;
+            border-radius: 10px;
+        }
+
+        audio {
+            display: block;
+            margin-top: 20px;
+        }
+
+        iframe {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .home-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            color: white;
+            background-color: #3498db;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .home-button:hover {
+            background-color: #217dbb;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 500px;
+            display: block;
+        }
+
+        .video-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+     <div class="video-container">
+        <video src="Background.mp4" muted autoplay></video>
+        <div class="video-text"><h1>Chapter 2</h1></div>
+    </div>
+    <hr>
+
+    <p>
+        Setelah kejadian di <strong>Black Shores</strong>, Rover masih mencari tahu
+        tentang Abby, makhluk kecil yang sekarang menjadi pendampingnya.
+        Kondisi <strong><em>Abby</em></strong> ternyata tidak stabil.
+        Frekuensinya mulai melemah, dan Shorekeeper menduga jawabannya mungkin ada
+        di Rinascita, negeri yang terkenal dengan teknologi Echo dan hubungan mereka
+        dengan Sentinel bernama Imperator.
     </p>
-    <button onclick="location.href='Story1.html'">Visit Home</button>
-    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Role in Story</th>
+                <th>Affiliation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    Phrolova
+                    <img src="Phrolova.jpg" alt="Phrolova">
+                </td>
+                <td>Overseer / one of Fractsidus' key executives</td>
+                <td>Fractsidus</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Cartethyia
+                    <img src="Cartethiya.png" alt="Cartethyia">
+                </td>
+                <td>The Blessed Maiden and the Imperator's Resonator.</td>
+                <td>Order of the Deep / Imperator</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Cantarella
+                    <img src="Cantarella.png" alt="Cantarella">
+                </td>
+                <td>The 36th matriarch of the Fisalia family.</td>
+                <td>Fisalia Family</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <b>Rover</b> tiba di kota utama Rinascita, Ragunna.
+
+Rinascita sangat berbeda dengan Jinzhou.
+
+Jinzhou terasa seperti negara yang sedang bertahan hidup dari Lament. Rinascita justru tampak seperti tempat yang makmur, penuh seni, musik, festival, Echo, dan budaya.
+
+Masyarakat Rinascita sangat menghormati Sentinel mereka:
+
+Imperator.
+
+Mereka percaya bahwa Echo adalah semacam berkat dari Sentinel.
+
+Masalahnya?
+
+Imperator sudah lama tidak memberikan oracle atau petunjuk.
+
+Namun masyarakat tetap percaya kepada agama dan struktur yang dibangun atas nama Imperator.
+    </p>
+
+    <audio controls>
+        <source src="Chapter2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <iframe 
+        width="560" 
+        height="315"
+        src="https://www.youtube.com/embed/s8N6_1sR5LA"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+
+    <a class="home-button" href="Story1.html">Visit Home</a>
 </body>
 </html>
